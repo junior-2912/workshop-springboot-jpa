@@ -23,7 +23,7 @@ public class OrderService {
         if (optionalUser.isPresent()) {
             return optionalUser.get();
         } else {
-            throw new RuntimeException("Pedido nao existe");
+            throw new IllegalArgumentException("Order not found!");
         }
     }
 }

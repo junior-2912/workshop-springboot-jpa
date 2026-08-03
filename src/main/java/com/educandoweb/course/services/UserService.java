@@ -23,7 +23,7 @@ public class UserService {
         if (optionalUser.isPresent()) {
             return optionalUser.get();
         } else {
-            throw new RuntimeException("Usuario nao existe");
+            throw new IllegalArgumentException("Usuario nao existe");
         }
     }
 }
